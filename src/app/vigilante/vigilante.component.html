@@ -1,0 +1,21 @@
+<h1>Vehiculos Registrados</h1>
+<div class="clear"></div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Placa</th>
+      <th>Tipo</th>
+      <th>Fecha Entrada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of registros">
+      <td></td>
+      <td>{{item.vehiculo.placa}}</td>
+      <td>{{item.vehiculo.tipoDeVehiculo}}</td>
+      <td>{{item.horaEntrada}}</td>
+    </tr>
+  </tbody>
+</table>
+
