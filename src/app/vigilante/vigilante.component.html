@@ -7,6 +7,7 @@
       <th>Placa</th>
       <th>Tipo</th>
       <th>Fecha Entrada</th>
+      <th>Accion</th>
     </tr>
   </thead>
   <tbody>
@@ -15,6 +16,7 @@
       <td>{{item.vehiculo.placa}}</td>
       <td>{{item.vehiculo.tipoDeVehiculo}}</td>
       <td>{{item.horaEntrada}}</td>
+      <td><img src="../../assets/edit.png" class="editIcon" (click)="registrarSalida(item)"></td>
     </tr>
   </tbody>
 </table>

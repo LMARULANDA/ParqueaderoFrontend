@@ -1,3 +1,20 @@
-<p>
-  registrar-salida works!
-</p>
+<div class="container">
+    <h2>{{registro.vehiculo.placa}}</h2>
+    <p>The .table-bordered class adds borders to a table:</p>            
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Hora Entrada</th>
+          <th>Hora Salida</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{registro.horaEntrada}}</td>
+          <td>{{registro.horaSalida}}</td>
+          <td>{{registro.pago}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
