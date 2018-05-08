@@ -1,0 +1,23 @@
+<h2>Vehiculos Registrados</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Placa</th>
+      <th>Tipo</th>
+      <th>Fecha Entrada</th>
+      <th>Accion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of registros">
+      <td>{{item.id}}</td>
+      <td>{{item.vehiculo.placa}}</td>
+      <td>{{item.vehiculo.tipoDeVehiculo}}</td>
+      <td>{{item.horaEntrada | date: 'dd-MM-yyyy HH:mm:ss'}}</td>
+      <td><img src="../../assets/exit.png" class="editIcon" (click)="registrarSalida(item.vehiculo)"></td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" [routerLink]="['/registrarEntradaComponent']"  class="btn btn-primary">Registrar Vehiculo</button>
+

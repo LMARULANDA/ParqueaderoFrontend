@@ -3,27 +3,27 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { RegistroModel } from './../model/registro.model';
-import { VigilanteService } from './vigilante.service';
+import { RegistroService } from './registro.service';
 import { VehiculoModel } from './../model/vehiculo.model';
 
 
 @Component({
-  selector: 'app-vigilante',
-  templateUrl: './vigilante.component.html',
-  styleUrls: ['./vigilante.component.css'],
-  providers: [VigilanteService]
+  selector: 'app-registro',
+  templateUrl: './registro.component.html',
+  styleUrls: ['./registro.component.css'],
+  providers: [RegistroService]
 })
-export class VigilanteComponent implements OnInit {
+export class RegistroComponent implements OnInit {
 
  private registros:Array<RegistroModel>; 
   
-  constructor(private vigilanteService: VigilanteService,private router : Router) { }
+  constructor(private registroService: RegistroService,private router : Router) { }
 
   ngOnInit() {
     this.loadVehiculosRegistrados();
   }
   private  loadVehiculosRegistrados():void {
-    this.vigilanteService.getRegistros().subscribe(res =>{
+    this.registroService.getRegistros().subscribe(res =>{
       this.registros = res;
       
     });

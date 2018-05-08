@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
-export class VigilanteService {
+export class RegistroService {
 
   private registros:Array<RegistroModel>
   constructor(private http:HttpClient) { }

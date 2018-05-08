@@ -7,7 +7,7 @@ import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
-import { VigilanteComponent } from './vigilante/vigilante.component';
+import { RegistroComponent } from './registro/registro.component';
 import { RegistrarEntradaComponent } from './registrar-entrada/registrar-entrada.component';
 import { RegistrarSalidaComponent } from './registrar-salida/registrar-salida.component';
 
@@ -16,7 +16,7 @@ import { RegistrarSalidaComponent } from './registrar-salida/registrar-salida.co
 @NgModule({
   declarations: [
     AppComponent,
-    VigilanteComponent,
+    RegistroComponent,
     RegistrarEntradaComponent,
     RegistrarSalidaComponent
   ],
